@@ -55,7 +55,7 @@ class _LoadingAnimationViewState extends State<LoadingAnimationView> {
     setState(() {
       _deviceWidth = MediaQuery.of(context).size.width;
     });
-    Timer.periodic(Duration(seconds: 1), (timer) {
+    Timer.periodic(Duration(milliseconds: 200), (timer) {
       if (_widthOfAnimatedContainer.compareTo(_deviceWidth) == 1) {
         timer.cancel();
         showDialog(

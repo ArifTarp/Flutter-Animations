@@ -38,7 +38,7 @@ class _AnimationsViewState extends State<AnimationsView> {
                   alignment: _placeHolderChangeLocation == false
                       ? Alignment.topCenter
                       : Alignment.bottomCenter,
-                  duration: Duration(seconds: 3),
+                  duration: Duration(seconds: 1),
                   child:
                       Container(width: 80, height: 80, child: Placeholder())),
             ),
@@ -46,11 +46,11 @@ class _AnimationsViewState extends State<AnimationsView> {
               height: _graphic == false ? 30 : 200,
               width: 100,
               color: Colors.red,
-              duration: Duration(seconds: 3),
+              duration: Duration(seconds: 1),
             ),
             AnimatedOpacity(
               opacity: _flutterLogoOpacity == false ? 0.2 : 0.7,
-              duration: Duration(milliseconds: 500),
+              duration: Duration(milliseconds: 300),
               child: FlutterLogo(size: 150),
             ),
             _buildOutlineButton(
